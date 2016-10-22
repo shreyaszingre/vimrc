@@ -70,7 +70,7 @@ command W w !sudo tee % > /dev/null
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 7 lines to the cursor - when moving vertically using j/k
-set so=7
+set so=10
 
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en' 
@@ -196,9 +196,9 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
-" Linebreak on 500 characters
+" Linebreak on 79 characters
 set lbr
-set tw=500
+set tw=79
 
 set ai "Auto indent
 set si "Smart indent
@@ -221,8 +221,8 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 map <space> /
 map <c-space> ?
 
-" Disable highlight when <leader><cr> is pressed
-map <silent> <leader><cr> :noh<cr>
+" Disable highlight when <leader><space> is pressed
+map <silent> <leader><space> :noh<cr>
 
 " Smart way to move between windows
 map <C-j> <C-W>j
@@ -366,8 +366,6 @@ map <leader>x :e ~/buffer.md<cr>
 
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
-
-
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
