@@ -43,7 +43,9 @@ set nu
 
 " show line and column markers
 set cursorline
-" highlight Cursorline ctermbg=grey
+highlight cursorline ctermbg=darkgrey
+set cursorcolumn
+highlight cursorcolumn ctermbg=darkgrey
 
 set colorcolumn=80    " highlight column after 'textwidth'
 " highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
@@ -74,7 +76,7 @@ nnoremap ; :
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => From
-"   http://nvie.com/posts/how-i-boosted-my-vim/ 
+"   http://nvie.com/posts/how-i-boosted-my-vim/
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Just set your cursor inside a paragraph and press Q (or select a visual block
 " and press Q)
@@ -90,7 +92,7 @@ map <right> <nop>
 
 " Vim can highlight whitespaces for you in a convenient way:
 set list
-set listchars=tab:>.,trail:.,extends:#,nbsp:.
+set listchars=tab:>.,trail:$,extends:#,nbsp:.
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -121,3 +123,17 @@ au FocusGained,BufEnter * :silent! !
 " SZ: Following disabled to avoid undesired saving of files
 " -- save when exiting the buffer or losing focus
 " au FocusLost,WinLeave * :silent! w
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => From
+" https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/
+" #disqus_thread
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Enable folding
+set foldmethod=indent
+set foldlevel=99"
+
+" Enable folding with the spacebar
+nnoremap <space> za
