@@ -43,9 +43,9 @@ set nu
 
 " show line and column markers
 set cursorline
-highlight cursorline ctermbg=darkgrey
+" highlight cursorline ctermbg=darkgrey
 set cursorcolumn
-highlight cursorcolumn ctermbg=darkgrey
+" highlight cursorcolumn ctermbg=darkgrey
 
 set colorcolumn=80    " highlight column after 'textwidth'
 " highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
