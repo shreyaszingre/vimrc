@@ -27,3 +27,12 @@ STATCOM
 Mvar
 pu
 RSA
+CUSTOMIZER
+http
+repo
+runtime
+Cygwin
+github
+cuviper
+https
+tmp
