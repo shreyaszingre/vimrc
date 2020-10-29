@@ -198,7 +198,7 @@ set tabstop=4
 
 " Linebreak on 79 characters
 set lbr
-set tw=79
+"set tw=79
 
 set ai "Auto indent
 set si "Smart indent
@@ -268,6 +268,10 @@ endtry
 
 " Return to last edit position when opening files (You want this!)
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" Insert a new line without insert mode, below with oo and above with OO
+nmap oo o<Esc>k
+nmap OO O<Esc>j
 
 
 """"""""""""""""""""""""""""""
